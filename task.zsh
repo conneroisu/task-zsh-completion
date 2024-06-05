@@ -28,3 +28,4 @@ _task () {
 }
 
 compdef _task task
+autoload -Uz bashcompinit && bashcompinit
