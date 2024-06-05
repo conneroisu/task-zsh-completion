@@ -1,0 +1,16 @@
+#autoload
+
+_load () {
+  local state line
+  typeset -A opt_args
+
+  _arguments \
+    '*: :->args'
+  if command -v load &> /dev/null; then
+    compadd $(_load_get_tasks)
+  else
+    echo -e "\nLoad command not found"
+  fi
+}
+
+compdef _load load
