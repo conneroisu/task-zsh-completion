@@ -1,4 +1,5 @@
-#compdef task
+#autoload
+#compdef -task-
 local state line
 declare -A opt_args
 
